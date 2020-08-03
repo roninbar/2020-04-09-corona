@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <title>Corona</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mt-3">
+                <form>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Country</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Country" name="country1" id="country1" />
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Country</span>
+                        </div>
+                        <input type="text" name="country2" class="form-control" id="country2" placeholder="Country" />
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="number" name="days" class="form-control" id="days" placeholder="Days" />
+                    </div>
+                    <select name="by" class="custom-select text-light bg-secondary mb-3" id="compare-by">
+                        <option selected>Compare By</option>
+                        <option value="cases">Cases</option>
+                        <option value="casesPerMillion">Cases per Million</option>
+                        <option value="deaths">Deaths</option>
+                        <option value="deathsPerMillion">Deaths per Million</option>
+                        <option value="recovered">Recovered</option>
+                        <option value="recoveredPerMillion">Recovered per Million</option>
+                    </select>
+                    <button type="submit" class="btn btn-primary">Compare Countries</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="chart"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+</html>
