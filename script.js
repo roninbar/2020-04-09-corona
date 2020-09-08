@@ -99,6 +99,7 @@ $(function () {
 
             });
     });
+    
 });
 
 function makeSeries(c, metric, population = 1, per = 1000000) {
